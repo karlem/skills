@@ -1,0 +1,197 @@
+{
+  "method": "single-author primary-source claim checks; no independent verification claimed",
+  "claims": [
+    {
+      "id": "Q1",
+      "skill": "distributed-systems",
+      "claim": "Quorum intersection alone does not prove linearizability",
+      "source_ids": [
+        "ddia-course",
+        "postgres-isolation"
+      ],
+      "locator": "Cambridge 5.2 and 7.2; distinguish set intersection from operation consistency",
+      "verification": "Manual source reading; explicit assumptions/caveat in reference"
+    },
+    {
+      "id": "D1",
+      "skill": "distributed-systems",
+      "claim": "Outbox relay can republish; consumer dedup and atomic effect matter",
+      "source_ids": [
+        "outbox-pattern",
+        "postgres-insert"
+      ],
+      "locator": "Pattern Result context; PostgreSQL ON CONFLICT / RETURNING",
+      "verification": "Manual source check and modeled transaction/replay exercises"
+    },
+    {
+      "id": "F1",
+      "skill": "distributed-systems",
+      "claim": "Lease expiry alone cannot stop a paused holder; fencing must be enforced",
+      "source_ids": [
+        "distributed-locks"
+      ],
+      "locator": "Fencing and delayed process examples",
+      "verification": "Manual article reading; original review question"
+    },
+    {
+      "id": "P1",
+      "skill": "linux-performance",
+      "claim": "USE examines utilization, saturation and errors; host idle can coexist with quota pressure",
+      "source_ids": [
+        "performance-use",
+        "linux-psi"
+      ],
+      "locator": "USE methodology; kernel PSI definitions",
+      "verification": "Source check and bounded quota model; actual cgroup diagnosis not claimed"
+    },
+    {
+      "id": "P2",
+      "skill": "systems-profiling",
+      "claim": "Flame graph width is aggregated event weight, not timeline; CPU misses blocked time",
+      "source_ids": [
+        "performance-flame",
+        "performance-offcpu"
+      ],
+      "locator": "Flame Graphs Summary; off-CPU overview",
+      "verification": "Manual source check and absolute/relative normalization exercise"
+    },
+    {
+      "id": "A1",
+      "skill": "architecture-tradeoffs",
+      "claim": "Granularity balances separation forces with transaction/workflow coupling",
+      "source_ids": [
+        "hardparts-sample"
+      ],
+      "locator": "Chapter 7 Service Granularity, disintegrators/integrators",
+      "verification": "Read actual sample chapter; original boundary worksheet and dependency counterexample"
+    },
+    {
+      "id": "B1",
+      "skill": "database-internals",
+      "claim": "LSM trade-offs depend on compaction; a positive Bloom result is not proof of key existence",
+      "source_ids": [
+        "db-rocks",
+        "db-bloom"
+      ],
+      "locator": "Leveled compaction; Bloom filter overview, whole-key/prefix and math",
+      "verification": "Source check and deterministic filter counterexample; idealized formula labeled"
+    },
+    {
+      "id": "B2",
+      "skill": "database-internals",
+      "claim": "Long-lived SQLite readers can prevent checkpoint progress",
+      "source_ids": [
+        "db-wal"
+      ],
+      "locator": "2.1 Checkpointing, 2.2 Concurrency",
+      "verification": "Manual check and real two-connection SQLite WAL exercise"
+    },
+    {
+      "id": "S1",
+      "skill": "systems-programming",
+      "claim": "POSIX short transfers and EINTR need explicit progress handling",
+      "source_ids": [
+        "posix-read",
+        "posix-write"
+      ],
+      "locator": "DESCRIPTION and RETURN VALUE/error conditions",
+      "verification": "Source check; original C write loop compiled and fault-injected"
+    },
+    {
+      "id": "S2",
+      "skill": "systems-programming",
+      "claim": "Guard allocation multiplication before unsigned wrap",
+      "source_ids": [
+        "c-overflow"
+      ],
+      "locator": "INT30-C precondition checks and allocation example",
+      "verification": "Source check; original C guard compiled and boundary tested"
+    },
+    {
+      "id": "R1",
+      "skill": "production-reliability",
+      "claim": "Retry layers multiply attempts; backoff does not remove the need for a budget",
+      "source_ids": [
+        "release-retry"
+      ],
+      "locator": "Retries and backoff discussion",
+      "verification": "Manual source reading; worst-case and virtual deadline exercise"
+    },
+    {
+      "id": "C1",
+      "skill": "concurrent-programming",
+      "claim": "Java volatile is not a compound atomic increment; ordering differs from object atomicity",
+      "source_ids": [
+        "concurrency-java",
+        "concurrency-atomics"
+      ],
+      "locator": "JLS 17.4.5; atomic increment methods",
+      "verification": "Manual specification check; bounded lost-update interleavings"
+    },
+    {
+      "id": "C2",
+      "skill": "concurrent-programming",
+      "claim": "Linearizability preserves non-overlap real-time order; wait-free progress concerns each operation",
+      "source_ids": [
+        "concurrency-author",
+        "concurrency-waitfree"
+      ],
+      "locator": "Linearizability sections 1\u20133; Wait-Free Synchronization intro/model",
+      "verification": "Manual paper reading and fixed-order FIFO history counterexample"
+    },
+    {
+      "id": "C3",
+      "skill": "concurrent-programming",
+      "claim": "Deferred reclamation must account for readers that may still hold removed objects",
+      "source_ids": [
+        "concurrency-epoch"
+      ],
+      "locator": "Pointers, Pinning and Garbage sections",
+      "verification": "Manual official crate docs check; illustrative review schedule, not a reclamation implementation test"
+    },
+    {
+      "id": "A2",
+      "skill": "architecture-patterns",
+      "claim": "Static fitness checks establish selected dependency properties, not runtime isolation",
+      "source_ids": [
+        "arch-fitness",
+        "fundamentals-transcript"
+      ],
+      "locator": "ArchUnit layer/dependency rules; public author interview trade-offs",
+      "verification": "Manual primary material review; toy rule semantics test explicitly scoped"
+    },
+    {
+      "id": "O1",
+      "skill": "design-patterns",
+      "claim": "Abstract Factory handles related product families; adding product kinds affects provider interfaces",
+      "source_ids": [
+        "patterns-sample",
+        "patterns-interview"
+      ],
+      "locator": "Applicability/Consequences; author interfaces/composition discussion",
+      "verification": "Read official excerpt and interview; original minimal bundle example executed"
+    },
+    {
+      "id": "N1",
+      "skill": "network-engineering",
+      "claim": "TCP stream receipt is not a durable business effect; QUIC streams still share transport constraints",
+      "source_ids": [
+        "network-tcp",
+        "network-quic"
+      ],
+      "locator": "RFC 9293 2.2; RFC 9000 2 and 4",
+      "verification": "Manual protocol check and original application failure timeline"
+    },
+    {
+      "id": "N2",
+      "skill": "network-engineering",
+      "claim": "BDP uses bits/s times seconds; longest-prefix selects the most specific route",
+      "source_ids": [
+        "network-ch3",
+        "network-ch4"
+      ],
+      "locator": "Chapter 3 BDP slides; Chapter 4 longest-prefix slides 18 onward",
+      "verification": "Ordered slide-text inspection and unit/prefix exercise; diagrams not relied on"
+    }
+  ]
+}

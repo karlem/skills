@@ -1,0 +1,1700 @@
+{
+  "schema_version": 1,
+  "access_date": "2026-10-18",
+  "publication_policy": "Original engineering procedures and examples only. No books, raw extraction, source slides, copied figures, or substantial passages in Git. Public accessibility is not a redistribution license.",
+  "tooling": {
+    "primary": "https://github.com/virgiliojr94/book-to-skill",
+    "commit": "a24e62f4d8caf2ee433f6e48d9073800f56f906e",
+    "version": "1.4.0",
+    "mode": "text, --no-install-missing; pdftotext and HTML parser; supplementary HTML cleanup and PPTX XML"
+  },
+  "books": [
+    {
+      "priority": 1,
+      "id": "ddia",
+      "title": "Designing Data-Intensive Applications",
+      "authors": [
+        "Martin Kleppmann",
+        "Chris Riccomini"
+      ],
+      "edition": "2nd edition (2026)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "ddia-book",
+        "ddia-author",
+        "ddia-course",
+        "distributed-locks",
+        "postgres-insert",
+        "postgres-isolation",
+        "outbox-pattern"
+      ],
+      "skill_names": [
+        "distributed-systems"
+      ],
+      "coverage": [
+        "Failure/ack boundaries, replication, consistency contracts, quorum caveats, ordering, fencing, replay-safe effects and outbox review"
+      ],
+      "not_covered": [
+        "Full second-edition chapter text, analytics, encoding/schema evolution, stream processing and complete consensus algorithms"
+      ],
+      "incomplete_reason": "Publisher offers commercial/full-access reading; no authorized full ebook was available in the environment or found for unrestricted processing. Used publisher contents for identity and public author course notes plus listed primary supplements for mechanisms."
+    },
+    {
+      "priority": 2,
+      "id": "systems-performance",
+      "title": "Systems Performance: Enterprise and the Cloud",
+      "authors": [
+        "Brendan Gregg"
+      ],
+      "edition": "2nd edition (2020; copyright 2021)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "performance-book",
+        "performance-sample",
+        "performance-use",
+        "performance-flame",
+        "performance-perf",
+        "performance-offcpu",
+        "performance-bench",
+        "linux-psi"
+      ],
+      "skill_names": [
+        "linux-performance",
+        "systems-profiling"
+      ],
+      "coverage": [
+        "USE investigation, OS context, CPU/waiting profiles, benchmark design, resource pressure and original container scenarios"
+      ],
+      "not_covered": [
+        "Full book, CPU chapter prose, BPF/Ftrace chapters, exhaustive hardware/storage tuning"
+      ],
+      "incomplete_reason": "Commercial full edition not available; official sample contains Chapter 3 Operating Systems plus front matter/index. Author web documentation supplies performance methods and profiling details. Sample TOC/index entries are not treated as chapter coverage."
+    },
+    {
+      "priority": 3,
+      "id": "hard-parts",
+      "title": "Software Architecture: The Hard Parts",
+      "authors": [
+        "Neal Ford",
+        "Mark Richards",
+        "Pramod Sadalage",
+        "Zhamak Dehghani"
+      ],
+      "edition": "1st edition (2021)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "hardparts-book",
+        "hardparts-sample",
+        "arch-microservices",
+        "outbox-pattern"
+      ],
+      "skill_names": [
+        "architecture-tradeoffs"
+      ],
+      "coverage": [
+        "Chapter 7 service granularity forces; original boundary/migration worksheets with primary supplements"
+      ],
+      "not_covered": [
+        "Other book chapters, book case studies, full data architecture and saga taxonomy"
+      ],
+      "incomplete_reason": "No authorized full edition available; used official Thoughtworks-hosted Chapter 7 and primary architecture/outbox articles. Migration procedures are original supplemental guidance, not claimed book content."
+    },
+    {
+      "priority": 4,
+      "id": "database-internals",
+      "title": "Database Internals",
+      "authors": [
+        "Alex Petrov"
+      ],
+      "edition": "1st edition (2019)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "db-book",
+        "db-publisher",
+        "db-sqlite",
+        "db-rocks",
+        "db-wal",
+        "db-atomic",
+        "db-bloom"
+      ],
+      "skill_names": [
+        "database-internals"
+      ],
+      "coverage": [
+        "B-tree/LSM selection, amplification, Bloom filtering, WAL/checkpoint and recovery review"
+      ],
+      "not_covered": [
+        "Full book, engine implementation, complete distributed algorithms and recovery algorithms"
+      ],
+      "incomplete_reason": "Commercial publisher edition not available; author landing page and publisher contents do not provide full text. Technical coverage comes from SQLite and RocksDB primary documentation, clearly labeled as implementations rather than a book conversion."
+    },
+    {
+      "priority": 5,
+      "id": "csapp",
+      "title": "Computer Systems: A Programmer’s Perspective",
+      "authors": [
+        "Randal E. Bryant",
+        "David R. O’Hallaron"
+      ],
+      "edition": "3rd edition (2016)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "csapp-home",
+        "csapp-code",
+        "csapp-labs",
+        "posix-read",
+        "posix-write",
+        "c-overflow"
+      ],
+      "skill_names": [
+        "systems-programming"
+      ],
+      "coverage": [
+        "Allocation arithmetic, ownership/lifetime, cache locality, partial I/O and process/descriptor review"
+      ],
+      "not_covered": [
+        "Full book, processor design, detailed assembly, linking and virtual memory; lab solutions"
+      ],
+      "incomplete_reason": "No authorized full edition available. Public author companion pages were accessible; guessed 3e sample URL returned 404 and preface/code-file requests were denied. Used public resource descriptions, POSIX and SEI CERT; no restricted instructor files acquired."
+    },
+    {
+      "priority": 6,
+      "id": "release-it",
+      "title": "Release It! Design and Deploy Production-Ready Software",
+      "authors": [
+        "Michael T. Nygard"
+      ],
+      "edition": "2nd edition (2018)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "release-book",
+        "release-antipatterns",
+        "release-hosts",
+        "release-retry",
+        "outbox-pattern"
+      ],
+      "skill_names": [
+        "production-reliability"
+      ],
+      "coverage": [
+        "Failure propagation, resource containment, deadlines, retry budgets, idempotency, breaker/bulkhead review and recovery drills"
+      ],
+      "not_covered": [
+        "Full book, complete stability pattern catalogue and case histories"
+      ],
+      "incomplete_reason": "Publisher offers paid full edition; official Stability Antipatterns and Hosts excerpts are public. Retry details supplemented by Amazon primary guidance. No complete-book conversion claimed."
+    },
+    {
+      "priority": 7,
+      "id": "multiprocessor",
+      "title": "The Art of Multiprocessor Programming",
+      "authors": [
+        "Maurice Herlihy",
+        "Nir Shavit",
+        "Victor Luchangco",
+        "Michael Spear"
+      ],
+      "edition": "2nd edition (2020)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "concurrency-listing",
+        "concurrency-author",
+        "concurrency-waitfree",
+        "concurrency-java",
+        "concurrency-atomics",
+        "concurrency-epoch"
+      ],
+      "skill_names": [
+        "concurrent-programming"
+      ],
+      "coverage": [
+        "Linearizable histories, happens-before, races, progress distinctions, ABA and reclamation review"
+      ],
+      "not_covered": [
+        "Full second-edition text, complete algorithms/proofs, transactional memory and language-specific lock-free implementations"
+      ],
+      "incomplete_reason": "No authorized full edition available. Direct Elsevier title and ScienceDirect endpoints were denied; publisher catalogue and search metadata confirm edition. Used author-hosted Herlihy/Wing paper and official Java/reclamation documentation; this is original subject coverage."
+    },
+    {
+      "priority": 8,
+      "id": "fundamentals",
+      "title": "Fundamentals of Software Architecture",
+      "authors": [
+        "Mark Richards",
+        "Neal Ford"
+      ],
+      "edition": "2nd edition (2025)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "fundamentals-book",
+        "fundamentals-publisher",
+        "fundamentals-transcript",
+        "fundamentals-fitness",
+        "fundamentals-characteristics",
+        "fundamentals-katas",
+        "arch-fitness",
+        "arch-microservices"
+      ],
+      "skill_names": [
+        "architecture-patterns"
+      ],
+      "coverage": [
+        "Measurable quality scenarios, conditional style selection, coupling and fitness checks"
+      ],
+      "not_covered": [
+        "Full second-edition chapters, complete style catalogue and leadership/negotiation treatment"
+      ],
+      "incomplete_reason": "Full publisher edition requires commercial access. Used author companion/pages, a public first-edition-era interview transcript, and ArchUnit docs. Lesson page descriptions were read; videos were not watched/transcribed. Second-edition-specific details beyond contents are not claimed."
+    },
+    {
+      "priority": 9,
+      "id": "design-patterns",
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "authors": [
+        "Erich Gamma",
+        "Richard Helm",
+        "Ralph Johnson",
+        "John Vlissides"
+      ],
+      "edition": "1st edition (1994)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "patterns-book",
+        "patterns-sample",
+        "patterns-interview"
+      ],
+      "skill_names": [
+        "design-patterns"
+      ],
+      "coverage": [
+        "Abstract Factory applicability/trade-offs, behavioral interfaces/composition, original small family-construction example"
+      ],
+      "not_covered": [
+        "Full 23-pattern treatment, publisher examples/diagrams, complete pattern relationships"
+      ],
+      "incomplete_reason": "No authorized full edition available; official Abstract Factory excerpt and author interview were accessible. Other pattern names receive limited orientation, not a complete book conversion."
+    },
+    {
+      "priority": 10,
+      "id": "networking",
+      "title": "Computer Networking: A Top-Down Approach",
+      "authors": [
+        "James F. Kurose",
+        "Keith W. Ross"
+      ],
+      "edition": "9th edition (2025)",
+      "coverage_status": "partial",
+      "full_text_processed": false,
+      "source_ids": [
+        "network-book",
+        "network-slides",
+        "network-ch1",
+        "network-ch2",
+        "network-ch3",
+        "network-ch4",
+        "network-ch5",
+        "network-ch6",
+        "network-ch7",
+        "network-ch8",
+        "network-tcp",
+        "network-quic"
+      ],
+      "skill_names": [
+        "network-engineering"
+      ],
+      "coverage": [
+        "All eight author slide decks processed; selected original procedures on delay/BDP, application/transport contracts, forwarding/routing, LAN/wireless and network security diagnosis"
+      ],
+      "not_covered": [
+        "Full textbook prose/exercises, diagrams/animations and complete routing/wireless/security implementations"
+      ],
+      "incomplete_reason": "No authorized full textbook available; official ninth-edition slides are public. PPTX unsupported by book-to-skill, so ordered XML slide text was converted to Markdown then passed through its extractor. Current TCP/QUIC RFCs supplement transport semantics."
+    }
+  ],
+  "sources": [
+    {
+      "id": "ddia-book",
+      "title": "Designing Data-Intensive Applications, 2nd Edition — publisher contents",
+      "url": "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Bibliographic identity and second-edition topic map only",
+      "format": "html",
+      "final_url": "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
+      "http_status": 200,
+      "sha256": "8dad955e08e172a16fa797886a20f5957ec86db5cb4503214a7c15296bc8f1b0",
+      "bytes": 511190,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1930,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "ddia-author",
+      "title": "Martin Kleppmann — author site",
+      "url": "https://martin.kleppmann.com/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Second edition coauthored with Chris Riccomini, published in 2026",
+      "format": "html",
+      "final_url": "https://martin.kleppmann.com/",
+      "http_status": 200,
+      "sha256": "bfaa34063acba0a230bca6a40e3d9ca2964750e86a81e93c42443a1675fe2e2f",
+      "bytes": 30759,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1849,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "ddia-course",
+      "title": "Distributed Systems — Martin Kleppmann, Cambridge 2021/22",
+      "url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Document states Creative Commons BY-SA; version not specified in retrieved text. Used as a reference for concepts; no text or diagrams redistributed.",
+      "supports": "Sections 1.3, 3, 4, 5, 6 and 7: RPC outcomes, clocks, ordering, replication, consensus, consistency",
+      "format": "pdf",
+      "final_url": "https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf",
+      "http_status": 200,
+      "sha256": "4a754e36358948d4f98cb26fb8ecd44d868024d3bb0f26db30851158ddea3064",
+      "bytes": 4687332,
+      "extraction": {
+        "extraction_method": "pdftotext",
+        "extraction_mode": "text",
+        "pages": 91,
+        "words": 44184,
+        "chapters_detected": 9
+      }
+    },
+    {
+      "id": "distributed-locks",
+      "title": "How to do distributed locking — Martin Kleppmann",
+      "url": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Lease expiry, paused clients, fencing tokens and enforcement",
+      "format": "html",
+      "final_url": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html",
+      "http_status": 200,
+      "sha256": "8cf7f237e65cdbbaea54578bbf1f08e7d716462a35b645a8b6b85d9233a380ea",
+      "bytes": 42424,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 4206,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "postgres-insert",
+      "title": "PostgreSQL INSERT reference",
+      "url": "https://www.postgresql.org/docs/current/sql-insert.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "ON CONFLICT, unique constraints and RETURNING",
+      "format": "html",
+      "final_url": "https://www.postgresql.org/docs/current/sql-insert.html",
+      "http_status": 200,
+      "sha256": "242f0632b3158b667df9b635798b029775b2314a9c2443906b5bc7893a4c48d3",
+      "bytes": 48141,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 3491,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "postgres-isolation",
+      "title": "PostgreSQL transaction isolation",
+      "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Serializable behavior, snapshot anomalies and retries",
+      "format": "html",
+      "final_url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+      "http_status": 200,
+      "sha256": "0b5013fde5e842c82664f2d9fe599f1c8ef7756e8c3ecc254b589e3be9e0d356",
+      "bytes": 47642,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 3884,
+        "chapters_detected": 1
+      }
+    },
+    {
+      "id": "outbox-pattern",
+      "title": "Transactional outbox — Chris Richardson",
+      "url": "https://microservices.io/patterns/data/transactional-outbox.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Atomic business-state/event intent; relay duplication and consumer idempotency",
+      "format": "html",
+      "final_url": "https://microservices.io/patterns/data/transactional-outbox.html",
+      "http_status": 200,
+      "sha256": "7b9d9b224d9b985bf03d581dcdef5c94a21f49a93f3ac1e74c6bc2104a48b3eb",
+      "bytes": 25474,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1263,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "performance-book",
+      "title": "Systems Performance, 2nd Edition — author site",
+      "url": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Edition, contents and authoritative companion navigation",
+      "format": "html",
+      "final_url": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html",
+      "http_status": 200,
+      "sha256": "089b84f1d7e47fc0b33c7454ca1b15d27ade845a4566a59a98248a12df886c33",
+      "bytes": 15728,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 918,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "performance-sample",
+      "title": "Systems Performance, 2nd Edition — publisher sample",
+      "url": "https://www.informit.com/content/images/9780136820154/samplepages/9780136820154_Sample.pdf",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Chapter 3 Operating Systems, printed pp. 89–128, plus front matter and index; NOT CPU chapter text",
+      "format": "pdf",
+      "final_url": "https://ptgmedia.pearsoncmg.com/images/9780136820154/samplepages/9780136820154_Sample.pdf",
+      "http_status": 200,
+      "sha256": "28259f0a6869f3b3d44eb11b36d882de1bb59c0e57c749eb5122d27c86667e03",
+      "bytes": 2600612,
+      "extraction": {
+        "extraction_method": "pdftotext",
+        "extraction_mode": "text",
+        "pages": 141,
+        "words": 35658,
+        "chapters_detected": 80
+      }
+    },
+    {
+      "id": "performance-use",
+      "title": "The USE Method — Brendan Gregg",
+      "url": "https://www.brendangregg.com/usemethod.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Utilization, saturation, errors and resource-oriented investigation",
+      "format": "html",
+      "final_url": "https://www.brendangregg.com/usemethod.html",
+      "http_status": 200,
+      "sha256": "9a08f590bbbd2a071312486bbbafab2fb840adc26e935541b61fae18879d7707",
+      "bytes": 34405,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 3741,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "performance-flame",
+      "title": "Flame Graphs — Brendan Gregg",
+      "url": "https://www.brendangregg.com/flamegraphs.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Aggregated stack/event weights and flame graph interpretation",
+      "format": "html",
+      "final_url": "https://www.brendangregg.com/flamegraphs.html",
+      "http_status": 200,
+      "sha256": "e7f485d4245cfaab40f61d4b3786b41e92876707b09f84425d8f5c933219e839",
+      "bytes": 64420,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 5161,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "performance-perf",
+      "title": "Linux perf Examples — Brendan Gregg",
+      "url": "https://www.brendangregg.com/perf.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Sampling, stack capture, counters, overhead and profiling examples",
+      "format": "html",
+      "final_url": "https://www.brendangregg.com/perf.html",
+      "http_status": 200,
+      "sha256": "a60d127603220a9f74776ed9c370a3ffc2d69383366f44241d3460ab434e99a4",
+      "bytes": 210726,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 19791,
+        "chapters_detected": 10
+      }
+    },
+    {
+      "id": "performance-offcpu",
+      "title": "Off-CPU Analysis — Brendan Gregg",
+      "url": "https://www.brendangregg.com/offcpuanalysis.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Blocked-time stacks and limits of CPU-only evidence",
+      "format": "html",
+      "final_url": "https://www.brendangregg.com/offcpuanalysis.html",
+      "http_status": 200,
+      "sha256": "766e0b85728ba199f20b151f1825c33008983ae2f3cbf701c10585fbd2fc96be",
+      "bytes": 48742,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 5357,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "performance-bench",
+      "title": "Active Benchmarking — Brendan Gregg",
+      "url": "https://www.brendangregg.com/activebenchmarking.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Observe the benchmark and system while measuring performance",
+      "format": "html",
+      "final_url": "https://www.brendangregg.com/activebenchmarking.html",
+      "http_status": 200,
+      "sha256": "52575303f17025ca18bfa77a18ac18150d64c6808521f7ccf888d4bc760c6158",
+      "bytes": 10393,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1038,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "linux-psi",
+      "title": "Linux kernel pressure stall information",
+      "url": "https://docs.kernel.org/accounting/psi.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "some/full, rolling percentages, cumulative totals, system and cgroup scope",
+      "format": "html",
+      "final_url": "https://docs.kernel.org/accounting/psi.html",
+      "http_status": 200,
+      "sha256": "58a0d2d28cf7c33cc2f3132ffbfe142ca2a31d17df9719cbfb19450a35a69036",
+      "bytes": 19730,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1206,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "hardparts-book",
+      "title": "Software Architecture: The Hard Parts — author companion site",
+      "url": "https://architecturethehardparts.com/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Bibliographic identity and scenario-oriented approach",
+      "format": "html",
+      "final_url": "https://architecturethehardparts.com/",
+      "http_status": 200,
+      "sha256": "23427513d84446a63b5928cb3ff02dd1f14612df232785da805f77a69e479350",
+      "bytes": 8714,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 768,
+        "chapters_detected": 15
+      }
+    },
+    {
+      "id": "hardparts-sample",
+      "title": "Software Architecture: The Hard Parts — official free Chapter 7",
+      "url": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/books/bk_software_architecture_hard_parts_ch7_en.pdf",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Service Granularity: separation/integration forces, transactions, workflows, shared code/data",
+      "format": "pdf",
+      "final_url": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/books/bk_software_architecture_hard_parts_ch7_en.pdf",
+      "http_status": 200,
+      "sha256": "6f8dbbdcacb837112eedb13fbed8e71c4465c4e80c815a0b000ab07931768715",
+      "bytes": 2698146,
+      "extraction": {
+        "extraction_method": "pdftotext",
+        "extraction_mode": "text",
+        "pages": 40,
+        "words": 9589,
+        "chapters_detected": 11
+      }
+    },
+    {
+      "id": "arch-microservices",
+      "title": "Microservices — James Lewis and Martin Fowler",
+      "url": "https://martinfowler.com/articles/microservices.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Deployment boundaries, data ownership, operational costs and distributed trade-offs",
+      "format": "html",
+      "final_url": "https://martinfowler.com/articles/microservices.html",
+      "http_status": 200,
+      "sha256": "a29812554151c3ca90c22a81aef80ea271ae1ee80bf6ca90fb8d9d78281338f8",
+      "bytes": 86071,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 7911,
+        "chapters_detected": 1
+      }
+    },
+    {
+      "id": "db-book",
+      "title": "Database Internals — author book site",
+      "url": "https://www.databaseinternals.com/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Bibliographic discovery only; retrieved page had little substantive material",
+      "format": "html",
+      "final_url": "https://databaseinternals.com/",
+      "http_status": 200,
+      "sha256": "2e6676e6e61f432cde38b9159e90339280b9d6c142cb2d1a3ef81d9ab0bdde0e",
+      "bytes": 92834,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 127,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "db-publisher",
+      "title": "Database Internals — publisher contents",
+      "url": "https://www.oreilly.com/library/view/database-internals/9781492040330/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Bibliographic identity and topic map only",
+      "format": "html",
+      "final_url": "https://www.oreilly.com/library/view/database-internals/9781492040330/",
+      "http_status": 200,
+      "sha256": "27823e34579d6c479cc0f58169404a901a9d2692d907f505d9769f974eaccf88",
+      "bytes": 511139,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1735,
+        "chapters_detected": 2
+      }
+    },
+    {
+      "id": "db-sqlite",
+      "title": "SQLite database file format",
+      "url": "https://www.sqlite.org/fileformat.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "B-tree page structures and record/index storage",
+      "format": "html",
+      "final_url": "https://www.sqlite.org/fileformat.html",
+      "http_status": 200,
+      "sha256": "905067afacc30583c9ee86778b532094cc1830c7ec7b5f019bcfd2eb9ded97a2",
+      "bytes": 110473,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 14135,
+        "chapters_detected": 1
+      }
+    },
+    {
+      "id": "db-rocks",
+      "title": "RocksDB leveled compaction",
+      "url": "https://github.com/facebook/rocksdb/wiki/Leveled-Compaction",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Sorted runs, level overlap, compaction and amplification trade-offs",
+      "format": "html",
+      "final_url": "https://github.com/facebook/rocksdb/wiki/Leveled-Compaction",
+      "http_status": 200,
+      "sha256": "ca3b59761b5b4f796272e6f1a95f5706dfb2e2d95ff915d9c714dcaf8ba53c75",
+      "bytes": 685794,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 5316,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "db-wal",
+      "title": "SQLite write-ahead logging",
+      "url": "https://www.sqlite.org/wal.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Reader end marks, checkpointing, concurrency, durability configuration and WAL files",
+      "format": "html",
+      "final_url": "https://www.sqlite.org/wal.html",
+      "http_status": 200,
+      "sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e",
+      "bytes": 42143,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 5170,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "db-atomic",
+      "title": "SQLite atomic commit",
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Failure model, write ordering, synchronization and recovery assumptions",
+      "format": "html",
+      "final_url": "https://www.sqlite.org/atomiccommit.html",
+      "http_status": 200,
+      "sha256": "5a5be7b660217c9408c8a81eaf2faa2d08832ed3790f895a0a713916ad856ea1",
+      "bytes": 77968,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 10469,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "db-bloom",
+      "title": "RocksDB Bloom Filter",
+      "url": "https://github.com/facebook/rocksdb/wiki/RocksDB-Bloom-Filter",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Negative lookup filtering, false positives, memory and lifecycle considerations",
+      "format": "html",
+      "final_url": "https://github.com/facebook/rocksdb/wiki/RocksDB-Bloom-Filter",
+      "http_status": 200,
+      "sha256": "e109c0cdd11a4df34ace0b2963200b798759c9464f666e67ea24b2a905b8daa4",
+      "bytes": 689777,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 6138,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "csapp-home",
+      "title": "Computer Systems: A Programmer's Perspective, 3rd Edition — authors",
+      "url": "https://csapp.cs.cmu.edu/3e/home.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Edition and companion navigation only",
+      "format": "html",
+      "final_url": "https://csapp.cs.cmu.edu/3e/home.html",
+      "http_status": 200,
+      "sha256": "5dd54d44557084b21021ab3c9075eccbdfb664e817e6f54fb1baf0c9cabc4fd7",
+      "bytes": 5791,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 330,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "csapp-code",
+      "title": "CS:APP3e source-code index",
+      "url": "https://csapp.cs.cmu.edu/3e/code.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Topic orientation: data, memory, I/O, processes and concurrency; linked code not copied",
+      "format": "html",
+      "final_url": "https://csapp.cs.cmu.edu/3e/code.html",
+      "http_status": 200,
+      "sha256": "9e5f7ed05d318bb9b5336c6e0d111406e22dbe15f742d3c253186c22844ef263",
+      "bytes": 11432,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 721,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "csapp-labs",
+      "title": "CS:APP3e laboratory descriptions",
+      "url": "https://csapp.cs.cmu.edu/3e/labs.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Public descriptions only; no instructor materials/solutions acquired",
+      "format": "html",
+      "final_url": "https://csapp.cs.cmu.edu/3e/labs.html",
+      "http_status": 200,
+      "sha256": "087eb304fcba9b11c8b9c1e0f8feb18d6dffc9295989902d4306d47bfae8a701",
+      "bytes": 12670,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1194,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "posix-read",
+      "title": "POSIX.1-2024 read",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/read.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Short reads, interruption, EOF, nonblocking errors",
+      "format": "html",
+      "final_url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/read.html",
+      "http_status": 200,
+      "sha256": "af724071475054a17dde265a540bc39bd6e5d06da2373729141280adb8fdd744",
+      "bytes": 24752,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 2914,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "posix-write",
+      "title": "POSIX.1-2024 write",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/write.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Short writes, EINTR, size limits, nonblocking errors and SIGPIPE",
+      "format": "html",
+      "final_url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/write.html",
+      "http_status": 200,
+      "sha256": "1b45e6a71f8bc9bff702da5633d42c88fd927c1d0efc5bafe7a939d23eb66e6a",
+      "bytes": 31921,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 3579,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "c-overflow",
+      "title": "SEI CERT C INT30-C",
+      "url": "https://wiki.sei.cmu.edu/confluence/display/c/INT30-C.+Ensure+that+unsigned+integer+operations+do+not+wrap",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Unsigned wraparound and precondition checks for allocation arithmetic",
+      "format": "html",
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/integers-int/int30-c/",
+      "http_status": 200,
+      "sha256": "39af8166114988c5a832e8c4808aced14e0654748245a36778ebd2dca5925b7f",
+      "bytes": 307414,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 2855,
+        "chapters_detected": 2
+      }
+    },
+    {
+      "id": "release-book",
+      "title": "Release It!, Second Edition — Pragmatic Bookshelf",
+      "url": "https://pragprog.com/titles/mnee2/release-it-second-edition/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Edition, author and links to authorized excerpts",
+      "format": "html",
+      "final_url": "https://pragprog.com/titles/mnee2/release-it-second-edition/",
+      "http_status": 200,
+      "sha256": "ca0ab9164f9357f23096b420a7565c75b4e393e6450db26ebdc62c37700f7001",
+      "bytes": 32353,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 963,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "release-antipatterns",
+      "title": "Release It!, Second Edition — Stability Antipatterns excerpt",
+      "url": "https://media.pragprog.com/titles/mnee2/antipatterns.pdf",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Chapter 4: failure propagation and blocked-resource mechanisms",
+      "format": "pdf",
+      "final_url": "https://media.pragprog.com/titles/mnee2/antipatterns.pdf",
+      "http_status": 200,
+      "sha256": "88ee7894726a78f822b19d86a78a4ff76fa34563a39e59819daf3ad26be75553",
+      "bytes": 847956,
+      "extraction": {
+        "extraction_method": "pdftotext",
+        "extraction_mode": "text",
+        "pages": 12,
+        "words": 2782,
+        "chapters_detected": 1
+      }
+    },
+    {
+      "id": "release-hosts",
+      "title": "Release It!, Second Edition — Hosts excerpt",
+      "url": "https://media.pragprog.com/titles/mnee2/hosts.pdf",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Host/process/container operational concerns; excerpt only",
+      "format": "pdf",
+      "final_url": "https://media.pragprog.com/titles/mnee2/hosts.pdf",
+      "http_status": 200,
+      "sha256": "a2f0bbf420f6f10eeae69365fe591543ac7b63a949d9c2d4883073c93e34adb0",
+      "bytes": 761292,
+      "extraction": {
+        "extraction_method": "pdftotext",
+        "extraction_mode": "text",
+        "pages": 10,
+        "words": 2658,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "release-retry",
+      "title": "Timeouts, retries, and backoff with jitter — Amazon Builders Library",
+      "url": "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Timeout coverage, retry amplification, ambiguous outcomes, idempotency and jitter",
+      "format": "html",
+      "final_url": "https://builder.aws.com/content/3EumjoZascWd1oZiEgL8ORlv3qE/timeouts-retries-and-backoff-with-jitter",
+      "http_status": 200,
+      "sha256": "34bc1bc7abaa3517b4896a5c8ff62645cb91fd3b10450e4ba85816796e56c319",
+      "bytes": 127414,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 2454,
+        "chapters_detected": 1
+      }
+    },
+    {
+      "id": "concurrency-listing",
+      "title": "Elsevier software engineering catalogue — book listing",
+      "url": "https://shop.elsevier.com/books/subjects/physical-sciences-and-engineering/computer-science/software/software-engineering",
+      "access_date": "2026-10-18",
+      "access_status": "unavailable",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Confirms The Art of Multiprocessor Programming 2nd ed., 2020; metadata only",
+      "format": "html"
+    },
+    {
+      "id": "concurrency-waitfree",
+      "title": "Wait-Free Synchronization — Maurice Herlihy, 1991",
+      "url": "https://cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-hosted ACM paper, copyright ACM; conditional copying notice in paper. Reference only; no paper text redistributed.",
+      "supports": "Introduction and model: per-operation finite-step progress independent of other process speeds",
+      "format": "pdf",
+      "final_url": "https://cs.brown.edu/people/mph/Herlihy91/p124-herlihy.pdf",
+      "http_status": 200,
+      "sha256": "f2758020dc0c0dd6502d5eb43ccdce313d568095b8eb3eabb9d02959394a221f",
+      "bytes": 1750154,
+      "extraction": {
+        "extraction_method": "pdftotext",
+        "extraction_mode": "text",
+        "pages": 26,
+        "words": 12281,
+        "chapters_detected": 14
+      }
+    },
+    {
+      "id": "concurrency-author",
+      "title": "Linearizability: A Correctness Condition for Concurrent Objects — Herlihy and Wing, 1990",
+      "url": "https://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-hosted ACM paper, copyright ACM; conditional copying notice in paper. Reference only; no paper text redistributed.",
+      "supports": "Sections 1–3: legal sequential histories and real-time precedence",
+      "format": "pdf",
+      "final_url": "https://cs.brown.edu/people/mph/HerlihyW90/p463-herlihy.pdf",
+      "http_status": 200,
+      "sha256": "79e2ff81a15c55de870492231e81e36c50366389c118a7317b5877f603cfa2a0",
+      "bytes": 2207864,
+      "extraction": {
+        "extraction_method": "pdftotext",
+        "extraction_mode": "text",
+        "pages": 30,
+        "words": 13396,
+        "chapters_detected": 16
+      }
+    },
+    {
+      "id": "concurrency-java",
+      "title": "Java Language Specification SE 25, Chapter 17",
+      "url": "https://docs.oracle.com/javase/specs/jls/se25/html/jls-17.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "17.4 memory model, 17.4.5 happens-before and synchronization; wait/notify rules",
+      "format": "html",
+      "final_url": "https://docs.oracle.com/javase/specs/jls/se25/html/jls-17.html",
+      "http_status": 200,
+      "sha256": "5f747f41e4d2acf422eb789a693d423b8d2453b2f27aedcda62e4a5a7310553a",
+      "bytes": 175855,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 10293,
+        "chapters_detected": 3
+      }
+    },
+    {
+      "id": "concurrency-atomics",
+      "title": "Java SE 25 java.util.concurrent.atomic package",
+      "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/atomic/package-summary.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Atomic update operations and memory effects; algorithm-level progress requires separate reasoning",
+      "format": "html",
+      "final_url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/atomic/package-summary.html",
+      "http_status": 200,
+      "sha256": "5317bf4e767000cd88120621d67f56bad3a5ea3271a0858b04751ccca0f4098b",
+      "bytes": 18652,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 795,
+        "chapters_detected": 1
+      }
+    },
+    {
+      "id": "concurrency-epoch",
+      "title": "crossbeam-epoch official crate documentation",
+      "url": "https://docs.rs/crossbeam-epoch/latest/crossbeam_epoch/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Deferred reclamation, pinned readers, retired objects and stalled participants",
+      "format": "html",
+      "final_url": "https://docs.rs/crossbeam-epoch/latest/crossbeam_epoch/",
+      "http_status": 200,
+      "sha256": "c9fff88f087caa1b560268170136aca277aac9681acf275b3a6b86b90bfb95e1",
+      "bytes": 26210,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 659,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "fundamentals-book",
+      "title": "Fundamentals of Software Architecture — author companion",
+      "url": "https://fundamentalsofsoftwarearchitecture.com/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Second-edition companion, katas and style discussion navigation",
+      "format": "html",
+      "final_url": "https://fundamentalsofsoftwarearchitecture.com/",
+      "http_status": 200,
+      "sha256": "7185a1c98a86cc3261b0f2f8e10bccd55a399946910ffd6cad874ef22cc51872",
+      "bytes": 9362,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 572,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "fundamentals-publisher",
+      "title": "Fundamentals of Software Architecture, 2nd Edition — publisher contents",
+      "url": "https://www.oreilly.com/library/view/fundamentals-of-software/9781098175504/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Edition and topic map only; no chapter text accessed",
+      "format": "html",
+      "final_url": "https://www.oreilly.com/library/view/fundamentals-of-software/9781098175504/",
+      "http_status": 200,
+      "sha256": "079551f2b5d78a2b998adb497f9f35c2172fa831e5e2be47fd80529078fd4774",
+      "bytes": 607334,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 2393,
+        "chapters_detected": 27
+      }
+    },
+    {
+      "id": "fundamentals-transcript",
+      "title": "Thoughtworks interview with Mark Richards and Neal Ford",
+      "url": "https://www.thoughtworks.com/insights/books/fundamentals-of-software-architecture",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Public first-edition-era author transcript: qualities, style trade-offs and architectural thinking; not second-edition text",
+      "format": "html",
+      "final_url": "https://www.thoughtworks.com/insights/books/fundamentals-of-software-architecture",
+      "http_status": 200,
+      "sha256": "748422d0b552f0eb4e36ac940ab85dd989784ae5b910cdc6c533245e7b6b4f41",
+      "bytes": 228650,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 6757,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "fundamentals-fitness",
+      "title": "Mark Richards, Lesson 219 — Fitness Function Driven Architecture Revisited",
+      "url": "https://www.developertoarchitect.com/lessons/lesson219.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Public page description only; embedded video not transcribed/viewed",
+      "format": "html",
+      "final_url": "https://www.developertoarchitect.com/lessons/lesson219.html",
+      "http_status": 200,
+      "sha256": "5e60cd07f0b3a25c082565a66f02f6e748b934e60abefa2c86e5b8ca3c11f461",
+      "bytes": 7586,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 125,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "fundamentals-characteristics",
+      "title": "Mark Richards, Lesson 112 — Architecture Characteristics Worksheet",
+      "url": "https://www.developertoarchitect.com/lessons/lesson112.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Public page description only; worksheet/video not reproduced",
+      "format": "html",
+      "final_url": "https://www.developertoarchitect.com/lessons/lesson112.html",
+      "http_status": 200,
+      "sha256": "56d536a6385f9cc3a6ed236fdf9a95518f9b48cbdec777635e800eb54266cc3f",
+      "bytes": 7683,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 168,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "fundamentals-katas",
+      "title": "Author architecture katas",
+      "url": "https://fundamentalsofsoftwarearchitecture.com/katas/",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Public exercise orientation only; repository scenarios are original",
+      "format": "html",
+      "final_url": "https://fundamentalsofsoftwarearchitecture.com/katas/",
+      "http_status": 200,
+      "sha256": "c6a30528a6a9c0fa959dc36dac2ba1155b3a5e33a979cffbb563f593e32d74dd",
+      "bytes": 14205,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1637,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "arch-fitness",
+      "title": "ArchUnit user guide",
+      "url": "https://www.archunit.org/userguide/html/000_Index.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Automated dependency/layer/cycle rules; static-check limitations",
+      "format": "html",
+      "final_url": "https://www.archunit.org/userguide/html/000_Index.html",
+      "http_status": 200,
+      "sha256": "a635f8b559be79bcda3cc0db6e9b3f092bcb06ed73637a1d0ea665cb612cf08a",
+      "bytes": 174849,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 10881,
+        "chapters_detected": 14
+      }
+    },
+    {
+      "id": "patterns-book",
+      "title": "Design Patterns — InformIT publisher listing",
+      "url": "https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "1st edition identity and topic map only",
+      "format": "html",
+      "final_url": "https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610",
+      "http_status": 200,
+      "sha256": "38413da6f4a79d900b54af5dd0e72bf5bc78d144b57002aee1425ec79803830a",
+      "bytes": 129573,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1535,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "patterns-sample",
+      "title": "Design Patterns: Abstract Factory — official InformIT excerpt",
+      "url": "https://www.informit.com/articles/article.aspx?p=1398599",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Object Creational: Abstract Factory; applicability and consequences",
+      "format": "html",
+      "final_url": "https://www.informit.com/articles/article.aspx?p=1398599",
+      "http_status": 200,
+      "sha256": "1db87bc30f62497e3360d57f9212575c6b5de2616b9d7c9a42aa45a31ea88a91",
+      "bytes": 129123,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 2955,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "patterns-interview",
+      "title": "Design Principles from Design Patterns — Erich Gamma interview",
+      "url": "https://www.artima.com/articles/design-principles-from-design-patterns",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Behavioral interfaces and composition; original author interview",
+      "format": "html",
+      "final_url": "https://www.artima.com/articles/design-principles-from-design-patterns",
+      "http_status": 200,
+      "sha256": "acb40ef85b93d80190da3ebd09e0e7dbf3fc67deace36815ef8891df07cc5c82",
+      "bytes": 36021,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 3558,
+        "chapters_detected": 2
+      }
+    },
+    {
+      "id": "network-book",
+      "title": "Computer Networking 9E — author edition notes",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ninth.php",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Confirms 9th edition and changes; metadata/topic map only",
+      "format": "html",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ninth.php",
+      "http_status": 200,
+      "sha256": "f47f2a181fa3d748f75feb2a9e78858e8e40f0bfb7731265cd19d4cf813b8821",
+      "bytes": 9239,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 792,
+        "chapters_detected": 8
+      }
+    },
+    {
+      "id": "network-slides",
+      "title": "Kurose/Ross author slide index",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt.php",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Official links to ninth-edition slides",
+      "format": "html",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt.php",
+      "http_status": 200,
+      "sha256": "a99e84856b189f8157fb79491327e21107321b46aa9b4aa5392e8d888677471a",
+      "bytes": 7610,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 321,
+        "chapters_detected": 8
+      }
+    },
+    {
+      "id": "network-tcp",
+      "title": "RFC 9293 — Transmission Control Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Section 2.2 stream abstraction; transport versus application semantics",
+      "format": "html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+      "http_status": 200,
+      "sha256": "0be501b21b790ae4fa1db0cfe3d3ee935a94f69dc8e0ef7e32a04250eaa30f13",
+      "bytes": 532829,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 33181,
+        "chapters_detected": 2
+      }
+    },
+    {
+      "id": "network-quic",
+      "title": "RFC 9000 — QUIC transport",
+      "url": "https://www.rfc-editor.org/rfc/rfc9000.html",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Sections 2 and 4: streams and flow control; shared transport limits",
+      "format": "html",
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9000.html",
+      "http_status": 200,
+      "sha256": "2606485275c113d6d153d4e7144d8ea56e2dcdd899ccc3659531a40e392f2445",
+      "bytes": 750350,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 59943,
+        "chapters_detected": 2
+      }
+    },
+    {
+      "id": "skills-spec",
+      "title": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "name/description frontmatter, naming, progressive disclosure and structure",
+      "format": "html",
+      "final_url": "https://agentskills.io/specification",
+      "http_status": 200,
+      "sha256": "c5604823b868e039112674f3c68c675a81dbbd12199bdaeeed946c6db960a34a",
+      "bytes": 446491,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 1061,
+        "chapters_detected": 3
+      }
+    },
+    {
+      "id": "skills-cli",
+      "title": "Vercel skills CLI",
+      "url": "https://github.com/vercel-labs/skills",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Publicly accessible reference; no source redistribution permission asserted.",
+      "supports": "Repository discovery and selective skill installation",
+      "format": "html",
+      "final_url": "https://github.com/vercel-labs/skills",
+      "http_status": 200,
+      "sha256": "af2dd2b478632ae46724ce303f5dfe71dff394927b741521f6126e2df6786237",
+      "bytes": 463919,
+      "extraction": {
+        "extraction_method": "html-parser",
+        "extraction_mode": "text",
+        "pages": 0,
+        "words": 2958,
+        "chapters_detected": 0
+      }
+    },
+    {
+      "id": "network-ch1",
+      "title": "Computer Networking 9th ed. — author Chapter 1 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_1_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_1_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "82b5c78c1845c85f714ca8f7973f7252edae00265f75af5a12075d1b87591419",
+      "bytes": 19054287,
+      "slides": 89,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    },
+    {
+      "id": "network-ch2",
+      "title": "Computer Networking 9th ed. — author Chapter 2 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_2_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_2_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "9672ab26c1c32f8eeceacd0523ed93df99ef795037268c76228f037ddc4cb29e",
+      "bytes": 12784362,
+      "slides": 119,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    },
+    {
+      "id": "network-ch3",
+      "title": "Computer Networking 9th ed. — author Chapter 3 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_3_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_3_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "0d30baf63053f753be037a81fc23604c7148ddcf55ff9c650920e28f0c4c2379",
+      "bytes": 8866433,
+      "slides": 154,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    },
+    {
+      "id": "network-ch4",
+      "title": "Computer Networking 9th ed. — author Chapter 4 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_4_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_4_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "fc81c64b2990b11d85a8537d741d59c90f1aad9f669bdbd3d3d575886bf954a9",
+      "bytes": 4303068,
+      "slides": 102,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    },
+    {
+      "id": "network-ch5",
+      "title": "Computer Networking 9th ed. — author Chapter 5 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_5_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_5_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "721cb4d74751308988619315d111dbb3b6d9773078c994f87dfbd1cfac8fa572",
+      "bytes": 7050875,
+      "slides": 121,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    },
+    {
+      "id": "network-ch6",
+      "title": "Computer Networking 9th ed. — author Chapter 6 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_6_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_6_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "7ab006f98de31c4245ae30d5ff3f7204c1beb543792ce65f986738e8dd83f900",
+      "bytes": 15025606,
+      "slides": 111,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    },
+    {
+      "id": "network-ch7",
+      "title": "Computer Networking 9th ed. — author Chapter 7 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_7_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_7_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "88bf269c46793cd837ff9684e96ba26ce4170567f294cfbc10c800d65ecdf784",
+      "bytes": 36115670,
+      "slides": 154,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    },
+    {
+      "id": "network-ch8",
+      "title": "Computer Networking 9th ed. — author Chapter 8 slides",
+      "url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_8_v9.0.pptx",
+      "access_date": "2026-10-18",
+      "access_status": "public",
+      "license_or_access": "Author-provided teaching slides state attribution conditions for reuse/adaptation. Reference only; no slides or diagrams redistributed.",
+      "supports": "Ordered slide text extracted; diagrams/animations/equations not assumed faithfully preserved",
+      "format": "pptx",
+      "final_url": "https://gaia.cs.umass.edu/kurose_ross/ppt-9e/Chapter_8_v9.0.pptx",
+      "http_status": 200,
+      "sha256": "09dc3218a4cec1275e42f650d242f95cbeff02c1fabf2df3208a346963bffe62",
+      "bytes": 10913161,
+      "slides": 123,
+      "extraction": {
+        "extraction_method": "stdlib ZIP/XML ordered slide text, then book-to-skill Markdown",
+        "limitations": "No diagram, animation, speaker-note or mathematical-layout coverage guaranteed."
+      }
+    }
+  ],
+  "acquisition_issues": [
+    {
+      "id": "csapp-book",
+      "url": "https://csapp.cs.cmu.edu/3e/samples.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "concurrency-book",
+      "url": "https://shop.elsevier.com/books/the-art-of-multiprocessor-programming/herlihy/978-0-12-415950-1",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "csapp-preface",
+      "url": "https://csapp.cs.cmu.edu/3e/pieces/preface3e.pdf",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "csapp-io",
+      "url": "https://csapp.cs.cmu.edu/3e/ics3/code/src/csapp.c",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "concurrency-publisher",
+      "url": "https://www.sciencedirect.com/book/9780124159501/the-art-of-multiprocessor-programming",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "concurrency-brown",
+      "url": "https://cs.brown.edu/~mph/amp.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "concurrency-listing",
+      "url": "https://shop.elsevier.com/books/subjects/physical-sciences-and-engineering/computer-science/software/software-engineering",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "distributed-systems",
+    "path": "architecture/distributed-systems",
+    "title": "Distributed data correctness"
+  },
+  {
+    "name": "linux-performance",
+    "path": "performance/linux-performance",
+    "title": "Linux performance investigation"
+  },
+  {
+    "name": "systems-profiling",
+    "path": "performance/systems-profiling",
+    "title": "CPU and waiting-time profiling"
+  },
+  {
+    "name": "architecture-tradeoffs",
+    "path": "architecture/architecture-tradeoffs",
+    "title": "Service boundaries and architecture trade-offs"
+  },
+  {
+    "name": "database-internals",
+    "path": "databases/database-internals",
+    "title": "Storage engine decisions and recovery"
+  },
+  {
+    "name": "systems-programming",
+    "path": "engineering/systems-programming",
+    "title": "Systems programming and machine costs"
+  },
+  {
+    "name": "production-reliability",
+    "path": "reliability/production-reliability",
+    "title": "Production failure containment"
+  },
+  {
+    "name": "concurrent-programming",
+    "path": "concurrency/concurrent-programming",
+    "title": "Concurrent object correctness"
+  },
+  {
+    "name": "architecture-patterns",
+    "path": "architecture/architecture-patterns",
+    "title": "Architecture selection and fitness checks"
+  },
+  {
+    "name": "design-patterns",
+    "path": "engineering/design-patterns",
+    "title": "Design patterns through variation and contracts"
+  },
+  {
+    "name": "network-engineering",
+    "path": "networking/network-engineering",
+    "title": "Network paths, latency, and transport"
+  }
+]

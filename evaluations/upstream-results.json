@@ -1,0 +1,391 @@
+{
+  "converter_commit": "a24e62f4d8caf2ee433f6e48d9073800f56f906e",
+  "all_passed": true,
+  "checks": [
+    {
+      "skill": "distributed-systems",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/distributed-systems/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "distributed-systems",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/distributed-systems/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "distributed-systems",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/distributed-systems/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "distributed-systems",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/distributed-systems/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "distributed-systems",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "linux-performance",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/linux-performance/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "linux-performance",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/linux-performance/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "linux-performance",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/linux-performance/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "linux-performance",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/linux-performance/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "linux-performance",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "systems-profiling",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/systems-profiling/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-profiling",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/systems-profiling/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-profiling",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/systems-profiling/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-profiling",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/performance/systems-profiling/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-profiling",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "architecture-tradeoffs",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-tradeoffs/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-tradeoffs",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-tradeoffs/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-tradeoffs",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-tradeoffs/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-tradeoffs",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-tradeoffs/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-tradeoffs",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "database-internals",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/databases/database-internals/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "database-internals",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/databases/database-internals/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "database-internals",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/databases/database-internals/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "database-internals",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/databases/database-internals/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "database-internals",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "systems-programming",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/systems-programming/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-programming",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/systems-programming/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-programming",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/systems-programming/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-programming",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/systems-programming/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "systems-programming",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "production-reliability",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/reliability/production-reliability/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "production-reliability",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/reliability/production-reliability/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "production-reliability",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/reliability/production-reliability/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "production-reliability",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/reliability/production-reliability/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "production-reliability",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "concurrent-programming",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/concurrency/concurrent-programming/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "concurrent-programming",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/concurrency/concurrent-programming/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "concurrent-programming",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/concurrency/concurrent-programming/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "concurrent-programming",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/concurrency/concurrent-programming/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "concurrent-programming",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "architecture-patterns",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-patterns/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-patterns",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-patterns/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-patterns",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-patterns/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-patterns",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/architecture/architecture-patterns/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "architecture-patterns",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "design-patterns",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/design-patterns/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "design-patterns",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/design-patterns/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "design-patterns",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/design-patterns/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "design-patterns",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/engineering/design-patterns/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "design-patterns",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    },
+    {
+      "skill": "network-engineering",
+      "check": "format",
+      "lens": "claude",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/networking/network-engineering/SKILL.md [Claude Code]: no Claude Code-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "network-engineering",
+      "check": "format",
+      "lens": "copilot",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/networking/network-engineering/SKILL.md [GitHub Copilot CLI]: no GitHub Copilot CLI-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "network-engineering",
+      "check": "format",
+      "lens": "amp",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/networking/network-engineering/SKILL.md [Amp]: no Amp-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "network-engineering",
+      "check": "format",
+      "lens": "opencode",
+      "exit_code": 0,
+      "output": "\u2713 /workspace/skills/networking/network-engineering/SKILL.md [OpenCode]: no OpenCode-breaking issues (0 warning(s))\n"
+    },
+    {
+      "skill": "network-engineering",
+      "check": "content-scan",
+      "scope": "SKILL.md and every references/*.md via temporary chapters mirror",
+      "exit_code": 0,
+      "output": "Generated-skill scan passed: no known injection or authority patterns found.\n"
+    }
+  ]
+}
