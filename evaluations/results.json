@@ -1,0 +1,114 @@
+{
+  "method": "deterministic mechanism exercises and library/installation checks",
+  "not_measured": [
+    "independent agent responses",
+    "baseline-versus-skill uplift",
+    "production outcomes"
+  ],
+  "command": "python3 scripts/evaluate.py",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "c_compiler": "/usr/bin/cc",
+  "tests_run": 23,
+  "passed": 23,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "elapsed_seconds": 0.283,
+  "records": [
+    {
+      "test": "test_engineering.EngineeringExercises.test_bloom_no_false_negatives",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_c_allocation_guard",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_c_partial_write_and_eintr",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_dependency_failure_containment",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_distributed_crash_windows",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_fifo_history_counterexample",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_fitness_dependency_rule",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_lost_update_interleavings",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_network_budget_and_prefix",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_original_bundle_example",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_profile_normalization",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_quota_burst_model",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_retry_amplification_and_deadline",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_split_commit_counterexamples",
+      "status": "passed"
+    },
+    {
+      "test": "test_engineering.EngineeringExercises.test_sqlite_reader_pins_checkpoint",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_html_cleanup_discards_script_and_navigation",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_installed_skills_are_self_contained",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_installer_dry_run_has_no_writes",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_installer_preserves_existing_skill",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_installer_refuses_checkout_destination",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_installer_rejects_unknown_and_traversal",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_library_validation",
+      "status": "passed"
+    },
+    {
+      "test": "test_library.LibraryChecks.test_pptx_numeric_slide_order",
+      "status": "passed"
+    }
+  ],
+  "runner_output": "test_bloom_no_false_negatives (test_engineering.EngineeringExercises.test_bloom_no_false_negatives) ... ok\ntest_c_allocation_guard (test_engineering.EngineeringExercises.test_c_allocation_guard) ... ok\ntest_c_partial_write_and_eintr (test_engineering.EngineeringExercises.test_c_partial_write_and_eintr) ... ok\ntest_dependency_failure_containment (test_engineering.EngineeringExercises.test_dependency_failure_containment) ... ok\ntest_distributed_crash_windows (test_engineering.EngineeringExercises.test_distributed_crash_windows) ... ok\ntest_fifo_history_counterexample (test_engineering.EngineeringExercises.test_fifo_history_counterexample) ... ok\ntest_fitness_dependency_rule (test_engineering.EngineeringExercises.test_fitness_dependency_rule) ... ok\ntest_lost_update_interleavings (test_engineering.EngineeringExercises.test_lost_update_interleavings) ... ok\ntest_network_budget_and_prefix (test_engineering.EngineeringExercises.test_network_budget_and_prefix) ... ok\ntest_original_bundle_example (test_engineering.EngineeringExercises.test_original_bundle_example) ... ok\ntest_profile_normalization (test_engineering.EngineeringExercises.test_profile_normalization) ... ok\ntest_quota_burst_model (test_engineering.EngineeringExercises.test_quota_burst_model) ... ok\ntest_retry_amplification_and_deadline (test_engineering.EngineeringExercises.test_retry_amplification_and_deadline) ... ok\ntest_split_commit_counterexamples (test_engineering.EngineeringExercises.test_split_commit_counterexamples) ... ok\ntest_sqlite_reader_pins_checkpoint (test_engineering.EngineeringExercises.test_sqlite_reader_pins_checkpoint) ... ok\ntest_html_cleanup_discards_script_and_navigation (test_library.LibraryChecks.test_html_cleanup_discards_script_and_navigation) ... ok\ntest_installed_skills_are_self_contained (test_library.LibraryChecks.test_installed_skills_are_self_contained) ... ok\ntest_installer_dry_run_has_no_writes (test_library.LibraryChecks.test_installer_dry_run_has_no_writes) ... ok\ntest_installer_preserves_existing_skill (test_library.LibraryChecks.test_installer_preserves_existing_skill) ... ok\ntest_installer_refuses_checkout_destination (test_library.LibraryChecks.test_installer_refuses_checkout_destination) ... ok\ntest_installer_rejects_unknown_and_traversal (test_library.LibraryChecks.test_installer_rejects_unknown_and_traversal) ... ok\ntest_library_validation (test_library.LibraryChecks.test_library_validation) ... ok\ntest_pptx_numeric_slide_order (test_library.LibraryChecks.test_pptx_numeric_slide_order) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.282s\n\nOK\n"
+}

@@ -1,0 +1,5 @@
+# Optional research-only environment. Installing skills requires none of these.
+book-to-skill @ git+https://github.com/virgiliojr94/book-to-skill.git@a24e62f4d8caf2ee433f6e48d9073800f56f906e
+beautifulsoup4==4.15.0
+pypdf==6.21.1
+ebooklib==0.20
